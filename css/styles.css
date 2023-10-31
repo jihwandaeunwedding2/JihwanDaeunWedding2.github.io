@@ -60,7 +60,7 @@
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
+ /* --bs-body-line-height: 1.5; */
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
@@ -92,7 +92,7 @@
 }
 
 body {
-  background-image: url("../assets/img/paper-texture.png");
+/*  background-color: #333; */
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
@@ -491,6 +491,10 @@ progress {
   font-size: 1.0rem;
   font-weight: 300;
   text-align: center;
+  --tw-border-opacity: 1;
+  border-bottom-width: 1px;
+  border-color: #efefef;
+  font-family: "Noto Serif KR",serif;
 }
 
 .display-1 {
@@ -10834,7 +10838,6 @@ html {
 }
 
 header {
-  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -10849,24 +10852,54 @@ section {
 
 img{
   width:100%;
-  padding-top: 10px;
 }
 
-/*#page-top > header > div > img {
-  width:100%
+header > div > span {
+  font-size: 0.5rem;
+  letter-spacing: .65em;
+  line-height: 1.4rem;
+  padding-bottom: 0.6rem;
+  transform: scale(.65);
 }
 
-#contact > div > div > div > img {
-  width:100%;
-  padding-top: 10px;
-}*/
+header > .container {
+  padding-top: 3em;
+}
+
+#leaf{
+  height: 1rem;
+  width: 1rem;
+  background-color: #f9f9f9;
+  align-content: center;
+}
+
+#our-story{
+  background-color: #f9f9f9;
+  padding-bottom:1em;
+}
 
 .text-foofa {
-  font-family: 'Miama', sans-serif;
+/*  font-family: 'Miama', sans-serif; */
+  font-family: "Parisienne",serif;
+  padding-top: 1rem
+}
+
+.text-francisco {
+  font-family: 'Francisco',serif;
+}
+
+.text-foofa2 {
+  font-family: "Noto Serif KR",serif;
+  font-size: 1.0rem;
+  padding-top: 1rem
 }
 
 .text-strong {
-  font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
 }
+
+.bg_white {
+  background-color: #fff;
+}
+

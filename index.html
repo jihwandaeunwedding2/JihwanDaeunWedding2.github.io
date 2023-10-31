@@ -11,18 +11,22 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Foofa -->
         <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet">
-        <link rel="stylesheet" href="css/carousel.css" />
-        <script src="js/carousel.js"></script>
+        <link href="https://fonts.cdnfonts.com/css/parisienne" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/francisco" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
     </head>
     <body id="page-top">
-        <div class="carousel"></div>
         <!-- Header-->
-        <header class="bg-primary bg-gradient">
+        <header class="bg-primary bg-gradient bg-white">
+            <div class="text-center" style="white-space: break-spaces;"><span style="font-family: 'CormorantInfant-Medium', sans-serif;">W</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">E</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">D</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">D</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">N</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">G</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;"> </span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">N</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">V</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">T</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">A</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">T</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">O</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">N</span></div>
+            <div class="text-foofa2 text-center">임지환 | 이다은</div>
+            <img src="assets/img/foofa/main.png" alt="main">
             <div class="container px-4 text-center">
-                <h1 class="fw-bolder text-foofa">Wedding Day</h1>
-                <h1 class="fw-bolder text-foofa">Jihwan Lim & Daeun Lee</h1>
-                <h1 class="fw-bolder text-foofa">2023.12.23(Fri) 13:00</h1>
-                <img src="assets/img/foofa/12.jpg" alt="main">
+                <h1 class="fw-bolder text-francisco">Jihwan and Daeun</h1>
+                <h1 class="text-foofa2">2023년 12월 23일 토요일 오후 1시</h1>
+                <h1 class="text-foofa2">더채플앳논현 6층 라포레홀</h1>
             </div>
         </header>
         <!-- About section-->
@@ -30,25 +34,30 @@
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h1 class="fw-bolder text-foofa text-center">Our Story</h1>
-                        <br></br>
-                        <p class="lead">열 가지를 줘도 </p>
-                        <p class="lead">한 가지를 더 주지 못해 아쉬운 사람</p>
-                        <p class="lead">마음 한 구석</p>
-                        <p class="lead">작은 먼지까지 내비쳐도 부끄럽지 않은 사람</p>
-                        <p class="lead">즐거움도 슬픔도</p>
-                        <p class="lead">평생 함께 하고싶은 사람을 만났습니다.</p>
-                        <br></br>
-                        <p class="lead">밤산책을 하며 나눴던 수많은 약속과 이야기를</p>
-                        <p class="lead">앞으로 평생 함께 지켜가며 살아가려 합니다.</p>
-                        <br></br>
-                        <p class="lead">소중한 한 해를 되돌아보는 12월,</p>
-                        <p class="lead">저희의 새로운 시작을 축복해주시면</p>
-                        <p class="lead">더없는 행복으로 간직하겠습니다.</p>
-                        <br></br>
-                        <br></br>
-                        <p class="lead"><b class="text-strong">임석철 김현숙</b>의 아들 <b class="text-strong">임지환</b></p>
-                        <p class="lead"><b class="text-strong">이종식 김자영</b>의  딸  <b class="text-strong">이다은</b></p>
+                        <img src="assets/img/gray-top.jpg" alt="gray-top">
+                        <div id="our-story">
+                            <h1 class="fw-bolder text-foofa text-center">Our Story</h1>
+                            <br></br>
+                            <p class="lead">열 가지를 줘도 </p>
+                            <p class="lead">한 가지를 더 주지 못해 아쉬운 사람</p>
+                            <p class="lead">마음 한 구석</p>
+                            <p class="lead">작은 먼지까지 내비쳐도 부끄럽지 않은 사람</p>
+                            <p class="lead">즐거움도 슬픔도</p>
+                            <p class="lead">평생 함께 하고싶은 사람을 만났습니다.</p>
+                            <br></br>
+                            <p class="lead">밤산책을 하며 나눴던 수많은 약속과 이야기를</p>
+                            <p class="lead">앞으로 평생 함께 지켜가며 살아가려 합니다.</p>
+                            <br></br>
+                            <p class="lead">소중한 한 해를 되돌아보는 12월,</p>
+                            <p class="lead">저희의 새로운 시작을 축복해주시면</p>
+                            <p class="lead">더없는 행복으로 간직하겠습니다.</p>
+                            <br></br>
+                            <br></br>
+                            <p class="lead"><b class="text-strong">임석철 김현숙</b>의 아들 <b class="text-strong">임지환</b></p>
+                            <p class="lead"><b class="text-strong">이종식 김자영</b>의  딸  <b class="text-strong">이다은</b></p>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -69,7 +78,25 @@
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h1 style="color:red">사진 슬라이드 들어갈곳</h1>
-                        <div class="carousel"></div>
+                        <section
+                                id="thumbnail-carousel"
+                                class="splide"
+                                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+                        >
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="assets/img/foofa/1.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/img/foofa/2.jpg" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="assets/img/foofa/3.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
