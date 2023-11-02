@@ -10876,6 +10876,7 @@ header > .container {
 #our-story{
   background-color: #f9f9f9;
   padding-bottom:1em;
+  text-align:center;
 }
 
 .text-foofa {
@@ -10891,7 +10892,6 @@ header > .container {
 .text-foofa2 {
   font-family: "Noto Serif KR",serif;
   font-size: 1.0rem;
-  padding-top: 1rem
 }
 
 .text-strong {
@@ -10903,3 +10903,13 @@ header > .container {
   background-color: #fff;
 }
 
+.btn-foofa {
+  --bs-btn-color: #fff;
+  --bs-btn-border-color: #e5e5e5;
+  --bs-btn-border-radius: 0;
+  --bs-btn-font-family: ;
+  font-family: "Noto Serif KR",serif;
+  color: #000;
+  display :inline-block;
+  padding: 0.5em 3em 0.5em 3em;
+}
