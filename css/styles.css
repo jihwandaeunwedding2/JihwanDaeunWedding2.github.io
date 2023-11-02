@@ -3169,9 +3169,9 @@ textarea.form-control-lg {
   opacity: 0;
 }
 
-.collapse:not(.show) {
+/* .collapse:not(.show) {
   display: none;
-}
+} */
 
 .collapsing {
   height: 0;
@@ -10912,4 +10912,53 @@ header > .container {
   color: #000;
   display :inline-block;
   padding: 0.5em 3em 0.5em 3em;
+}
+
+.contact-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 1em;
+  grid-template-areas:
+		"g11 g11 g12 g12"
+		"g21 g22 g23 g24"
+		"g31 g31 g32 g32"
+		"g41 g42 g43 g44"
+  		"g51 g51 g52 g52"
+  		"g61 g62 g63 g64"
+}
+
+.contact-container img{
+  width:30%;
+}
+
+.g11 { grid-area: g11; }
+.g12 { grid-area: g12; }
+.g21 { grid-area: g21; }
+.g22 { grid-area: g22; }
+.g23 { grid-area: g23; }
+.g24 { grid-area: g24; }
+.g31 { grid-area: g31; }
+.g32 { grid-area: g32; }
+.g41 { grid-area: g41; }
+.g42 { grid-area: g42; }
+.g43 { grid-area: g43; }
+.g44 { grid-area: g44; }
+.g51 { grid-area: g51; }
+.g52 { grid-area: g52; }
+.g61 { grid-area: g61; }
+.g62 { grid-area: g62; }
+.g63 { grid-area: g63; }
+.g64 { grid-area: g64; }
+
+
+#account{
+  background-color: #f9f9f9;
+  padding-bottom:1em;
+  text-align:center;
+}
+
+.account{
+  width:80%;
+  background-color: #fff;
+  border: 0 solid #e5e5e5;
 }
