@@ -10904,6 +10904,7 @@ header > .container {
 .text-foofa2 {
   font-family: "Noto Serif KR",serif;
   font-size: 0.8rem;
+  color:#555;
 }
 
 .text-strong {
@@ -10933,7 +10934,8 @@ header > .container {
   --bs-btn-border-radius: 0;
   --bs-btn-font-family: ;
   font-family: "Noto Serif KR",serif;
-  color: #000;
+  font-size: 0.8rem;
+  color: #555;
   display :inline-block;
   padding: 0.5em 3em 0.5em 3em;
 }
@@ -10975,6 +10977,11 @@ header > .container {
 .g64 { grid-area: g64; }
 
 
+#calendar > div > div > div > div > div > div > table > tbody > tr > td {
+  border-bottom: none;
+  font-family: 'Trajan Pro', sans-serif;
+}
+
 #account{
   background-color: #f9f9f9;
   padding-bottom:1em;
@@ -10985,4 +10992,25 @@ header > .container {
   width:80%;
   background-color: #fff;
   border: 0 solid #e5e5e5;
+}
+
+
+
+
+
+.gallery{
+  display: grid;
+  grid-gap: 16px;
+  padding: 16px;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(160px,1fr);
+  overflow-x: auto;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
