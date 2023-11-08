@@ -33,4 +33,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+$('#collapseExample').collapse({
+    toggle: true
+})
+
 
