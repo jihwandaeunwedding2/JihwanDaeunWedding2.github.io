@@ -50,3 +50,13 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('.square'));
 
+function copy(id)
+{
+    var text = document.getElementById(id).textContent;
+    var textarea=document.createElement('textarea');
+    textarea.textContent=text;
+    document.body.append(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    textarea.remove();
+}
