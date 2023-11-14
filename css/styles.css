@@ -3183,12 +3183,15 @@ textarea.form-control-lg {
 .collapse{
   width:80%;
   padding: 0.5em;
+  margin:auto;
+  display:flex;
+  justify-content: space-between;
 }
 
 .collapsing {
   height: 0;
   overflow: hidden;
-  transition: height 0.35s ease;
+/*  transition: height 0.35s ease; */
 }
 @media (prefers-reduced-motion: reduce) {
   .collapsing {
@@ -3198,7 +3201,7 @@ textarea.form-control-lg {
 .collapsing.collapse-horizontal {
   width: 0;
   height: auto;
-  transition: width 0.35s ease;
+/*  transition: width 0.35s ease; */
 }
 @media (prefers-reduced-motion: reduce) {
   .collapsing.collapse-horizontal {
@@ -10907,7 +10910,7 @@ header > .container {
 .text-foofa {
 /*  font-family: 'Miama', sans-serif; */
   font-family: "Parisienne",serif;
-  padding-top: 1rem
+/*  padding-top: 1rem */
 }
 
 .text-francisco {
@@ -11012,7 +11015,7 @@ header > .container {
         "p2 p4 p7 p9 p11 p14 p17 p19 p22 p24 p26 p28 p30"
         "p2 p5 p7 p9 p12 p15 p17 p19 p22 p24 p26 p28 p30";
   grid-auto-flow: column;
-  grid-auto-rows: 80px;
+  grid-auto-rows: 100px;
   grid-auto-columns: 160px;
 
 }
@@ -11065,11 +11068,32 @@ header > .container {
   border: none;
 }
 
+#transport{
+  padding-top:1em;
+  display:inline-block;
+}
+
+.transport{
+  font-size:0.9em;
+  text-align:left;
+}
+
+.transport > img {
+  width:2em;
+  padding-bottom:0.8em;
+}
+
 #account{
   background-color: #f9f9f9;
   padding-bottom:1em;
   text-align:center;
   margin: auto;
+}
+
+#account1, #account2, #account3, #account4, #account5{
+  text-align: left;
+  line-height: 1.5em;
+  padding-right: 1.5em;
 }
 
 .account{
@@ -11120,8 +11144,8 @@ header > .container {
 
 .animate{
   position: relative;
-  -webkit-animation: fadein 1s cubic-bezier(0.02, 1.24, 1, 1.18);
-  animation: fadein 1s cubic-bezier(0.02, 1.24, 1, 1.18);
+  -webkit-animation: fadein 1s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+  animation: fadein 1s cubic-bezier(0.42, 0.0, 0.58, 1.0);
 /*  animation-duration: 4s; */
 }
 
