@@ -5258,7 +5258,7 @@ textarea.form-control-lg {
   --bs-modal-zindex: 1055;
   --bs-modal-width: 500px;
   --bs-modal-padding: 1rem;
-  --bs-modal-margin: 0.5rem;
+  --bs-modal-margin: 50% 0.5rem;
   --bs-modal-color: ;
   --bs-modal-bg: #fff;
   --bs-modal-border-color: var(--bs-border-color-translucent);
@@ -5366,12 +5366,14 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-modal-header-padding);
-  border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+  border-bottom:0;
+ /* border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color); */
   border-top-left-radius: var(--bs-modal-inner-border-radius);
   border-top-right-radius: var(--bs-modal-inner-border-radius);
 }
 .modal-header .btn-close {
-  padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
+  padding-bottom:0;
+/*  padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5); */
   margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
 }
 
@@ -10971,26 +10973,26 @@ header > .container {
 }
 
 .contact-container img{
-  width:30%;
+  width:25%;
 }
 
-.g11 { grid-area: g11; padding-left:2em;}
-.g12 { grid-area: g12; padding-right:2em;}
+.g11 { grid-area: g11; padding-left:3em;}
+.g12 { grid-area: g12; padding-right:3em;}
 .g21 { grid-area: g21; text-align:right; }
 .g22 { grid-area: g22; }
 .g23 { grid-area: g23; }
 .g24 { grid-area: g24; text-align:left;}
-.g31 { grid-area: g31; padding-left:2em; padding-top:1.5em;}
-.g32 { grid-area: g32; padding-right:2em; padding-top:1.5em;}
+.g31 { grid-area: g31; padding-left:3em; padding-top:1.5em;}
+.g32 { grid-area: g32; padding-right:3em; padding-top:1.5em;}
 .g41 { grid-area: g41; text-align:right;}
 .g42 { grid-area: g42; }
 .g43 { grid-area: g43; }
 .g44 { grid-area: g44; text-align:left;}
-.g51 { grid-area: g51; padding-left:2em;padding-top:1.5em;}
-.g52 { grid-area: g52; padding-right:2em;padding-top:1.5em;}
+.g51 { grid-area: g51; padding-left:3em;padding-top:1.5em;}
+.g52 { grid-area: g52; padding-right:3em;padding-top:1.5em;}
 .g61 { grid-area: g61; text-align:right;}
 .g62 { grid-area: g62; }
-.g63 { grid-area: g63; padding-bottom:2em;}
+.g63 { grid-area: g63; padding-bottom:3em;}
 .g64 { grid-area: g64; text-align:left;padding-bottom:2em;}
 
 
