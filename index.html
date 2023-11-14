@@ -15,6 +15,7 @@
         <link href="https://fonts.cdnfonts.com/css/cormorant-medium" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/trajan-pro" rel="stylesheet">
         <link href="https://webfontworld.github.io/mapo/MapoFlowerIsland.css" rel="stylesheet">
+        <link rel="stylesheet" href="ps/dist/photoswipe.css">
 
         <!--script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"-->
@@ -36,8 +37,57 @@
         <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"--></script>
         <link href="css/styles.css" rel="stylesheet" />
 
+        <script type="module">
+            import PhotoSwipeLightbox from '/ps/dist/photoswipe-lightbox.esm.js';
+
+            const lightbox = new PhotoSwipeLightbox({
+                // may select multiple "galleries"
+                gallery: '#gallery--getting-started',
+
+                // Elements within gallery (slides)
+                children: 'a',
+
+                // setup PhotoSwipe Core dynamic import
+                pswpModule: () => import('/ps/dist/photoswipe.esm.js')
+            });
+            lightbox.init();
+        </script>
+
+
     </head>
     <body id="page-top">
+
+    <!--div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+        <div class="gallery">
+            <figure class="gallery__item gallery__item--1">
+                <a class="gallery__img" href="assets/img/foofa/1.jpg"
+                   data-pswp-width="705.8"
+                   data-pswp-height="1058.6"
+                   data-cropped="true"
+                   target="_blank">
+                    <img src="assets/img/foofa-tb/1.jpg" alt="Image 1" />
+                </a>
+            </figure>
+            <div>
+                <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+                   data-pswp-width="2500"
+                   data-pswp-height="1667"
+                   data-cropped="true"
+                   target="_blank">
+                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+                </a>
+            </div>
+            <div>
+                <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+                   data-pswp-width="2500"
+                   data-pswp-height="1667"
+                   data-cropped="true"
+                   target="_blank">
+                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div-->
 
         <!-- Header-->
         <header class="bg-primary bg-gradient bg-white">
@@ -218,102 +268,283 @@
         <section class="bg-light" id="services">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8 overflow-scroll" style="height:600px">
-                        <h1 class="fw-bolder text-trajan text-center">Gallery</h1>
+                    <h1 class="fw-bolder text-trajan text-center">Gallery</h1>
+                    <div class="col-lg-8 overflow-scroll" style="height:25em">
+                        <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                            <div class="gallery">
+                                <figure class="gallery__item gallery__item--1">
+                                    <a class="gallery__img" href="assets/img/foofa/1.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/1.jpg" alt="Image 1" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--2">
+                                    <a class="gallery__img" href="assets/img/foofa/2.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/2.jpg" alt="Image 2" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--3">
+                                    <a class="gallery__img" href="assets/img/foofa/3.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/3.jpg" alt="Image 3" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--4">
+                                    <a class="gallery__img" href="assets/img/foofa/4.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/4.jpg" alt="Image 4" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--5">
+                                    <a class="gallery__img" href="assets/img/foofa/5.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/5.jpg" alt="Image 5" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--6">
+                                    <a class="gallery__img" href="assets/img/foofa/6.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/6.jpg" alt="Image 6" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--7">
+                                    <a class="gallery__img" href="assets/img/foofa/7.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/7.jpg" alt="Image 7" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--8">
+                                    <a class="gallery__img" href="assets/img/foofa/8.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/8.jpg" alt="Image 8" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--9">
+                                    <a class="gallery__img" href="assets/img/foofa/9.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/9.jpg" alt="Image 9" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--10">
+                                    <a class="gallery__img" href="assets/img/foofa/10.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/10.jpg" alt="Image 10" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--11">
+                                    <a class="gallery__img" href="assets/img/foofa/11.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/11.jpg" alt="Image 11" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--12">
+                                    <a class="gallery__img" href="assets/img/foofa/12.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/12.jpg" alt="Image 12" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--13">
+                                    <a class="gallery__img" href="assets/img/foofa/13.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/13.jpg" alt="Image 13" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--14">
+                                    <a class="gallery__img" href="assets/img/foofa/14.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/14.jpg" alt="Image 14" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--15">
+                                    <a class="gallery__img" href="assets/img/foofa/15.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/15.jpg" alt="Image 15" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--16">
+                                    <a class="gallery__img" href="assets/img/foofa/16.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/16.jpg" alt="Image 16" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--17">
+                                    <a class="gallery__img" href="assets/img/foofa/17.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/17.jpg" alt="Image 17" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--18">
+                                    <a class="gallery__img" href="assets/img/foofa/18.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/18.jpg" alt="Image 18" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--19">
+                                    <a class="gallery__img" href="assets/img/foofa/19.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/19.jpg" alt="Image 19" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--20">
+                                    <a class="gallery__img" href="assets/img/foofa/20.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/20.jpg" alt="Image 20" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--21">
+                                    <a class="gallery__img" href="assets/img/foofa/21.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/21.jpg" alt="Image 21" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--22">
+                                    <a class="gallery__img" href="assets/img/foofa/22.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/22.jpg" alt="Image 22" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--23">
+                                    <a class="gallery__img" href="assets/img/foofa/23.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/23.jpg" alt="Image 23" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--24">
+                                    <a class="gallery__img" href="assets/img/foofa/24.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/24.jpg" alt="Image 24" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--25">
+                                    <a class="gallery__img" href="assets/img/foofa/25.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/25.jpg" alt="Image 25" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--26">
+                                    <a class="gallery__img" href="assets/img/foofa/26.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/26.jpg" alt="Image 26" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--27">
+                                    <a class="gallery__img" href="assets/img/foofa/27.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/27.jpg" alt="Image 27" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--28">
+                                    <a class="gallery__img" href="assets/img/foofa/28.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/28.jpg" alt="Image 28" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--29">
+                                    <a class="gallery__img" href="assets/img/foofa/29.jpg"
+                                       data-pswp-width="705.8"
+                                       data-pswp-height="1058.6"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/29.jpg" alt="Image 29" />
+                                    </a>
+                                </figure>
+                                <figure class="gallery__item gallery__item--30">
+                                    <a class="gallery__img" href="assets/img/foofa/30.jpg"
+                                       data-pswp-width="1058.6"
+                                       data-pswp-height="705.8"
+                                       data-cropped="true"
+                                       target="_blank">
+                                        <img src="assets/img/foofa-tb/30.jpg" alt="Image 30" />
+                                    </a>
+                                </figure>
 
-                        <div class="gallery">
-                            <figure class="gallery__item gallery__item--1">
-                                <img src="assets/img/foofa/1.jpg" class="gallery__img" alt="Image 1">
-                            </figure>
-                            <figure class="gallery__item gallery__item--2">
-                                <img src="assets/img/foofa/2.jpg" class="gallery__img" alt="Image 2">
-                            </figure>
-                            <figure class="gallery__item gallery__item--3">
-                                <img src="assets/img/foofa/3.jpg" class="gallery__img" alt="Image 3">
-                            </figure>
-                            <figure class="gallery__item gallery__item--4">
-                                <img src="assets/img/foofa/4.jpg" class="gallery__img" alt="Image 4">
-                            </figure>
-                            <figure class="gallery__item gallery__item--5">
-                                <img src="assets/img/foofa/5.jpg" class="gallery__img" alt="Image 5">
-                            </figure>
-                            <figure class="gallery__item gallery__item--6">
-                                <img src="assets/img/foofa/6.jpg" class="gallery__img" alt="Image 6">
-                            </figure>
-                            <figure class="gallery__item gallery__item--7">
-                                <img src="assets/img/foofa/7.jpg" class="gallery__img" alt="Image 7">
-                            </figure>
-                            <figure class="gallery__item gallery__item--8">
-                                <img src="assets/img/foofa/8.jpg" class="gallery__img" alt="Image 8">
-                            </figure>
-                            <figure class="gallery__item gallery__item--9">
-                                <img src="assets/img/foofa/9.jpg" class="gallery__img" alt="Image 9">
-                            </figure>
-                            <figure class="gallery__item gallery__item--10">
-                                <img src="assets/img/foofa/10.jpg" class="gallery__img" alt="Image 10">
-                            </figure>
-                            <figure class="gallery__item gallery__item--11">
-                                <img src="assets/img/foofa/11.jpg" class="gallery__img" alt="Image 11">
-                            </figure>
-                            <figure class="gallery__item gallery__item--12">
-                                <img src="assets/img/foofa/12.jpg" class="gallery__img" alt="Image 12">
-                            </figure>
-                            <figure class="gallery__item gallery__item--13">
-                                <img src="assets/img/foofa/13.jpg" class="gallery__img" alt="Image 13">
-                            </figure>
-                            <figure class="gallery__item gallery__item--14">
-                                <img src="assets/img/foofa/14.jpg" class="gallery__img" alt="Image 14">
-                            </figure>
-                            <figure class="gallery__item gallery__item--15">
-                                <img src="assets/img/foofa/15.jpg" class="gallery__img" alt="Image 15">
-                            </figure>
-                            <figure class="gallery__item gallery__item--16">
-                                <img src="assets/img/foofa/16.jpg" class="gallery__img" alt="Image 16">
-                            </figure>
-                            <figure class="gallery__item gallery__item--17">
-                                <img src="assets/img/foofa/17.jpg" class="gallery__img" alt="Image 17">
-                            </figure>
-                            <figure class="gallery__item gallery__item--18">
-                                <img src="assets/img/foofa/18.jpg" class="gallery__img" alt="Image 18">
-                            </figure>
-                            <figure class="gallery__item gallery__item--19">
-                                <img src="assets/img/foofa/19.jpg" class="gallery__img" alt="Image 19">
-                            </figure>
-                            <figure class="gallery__item gallery__item--20">
-                                <img src="assets/img/foofa/20.jpg" class="gallery__img" alt="Image 20">
-                            </figure>
-                            <figure class="gallery__item gallery__item--21">
-                                <img src="assets/img/foofa/21.jpg" class="gallery__img" alt="Image 21">
-                            </figure>
-                            <figure class="gallery__item gallery__item--22">
-                                <img src="assets/img/foofa/22.jpg" class="gallery__img" alt="Image 22">
-                            </figure>
-                            <figure class="gallery__item gallery__item--23">
-                                <img src="assets/img/foofa/23.jpg" class="gallery__img" alt="Image 23">
-                            </figure>
-                            <figure class="gallery__item gallery__item--24">
-                                <img src="assets/img/foofa/24.jpg" class="gallery__img" alt="Image 24">
-                            </figure>
-                            <figure class="gallery__item gallery__item--25">
-                                <img src="assets/img/foofa/25.jpg" class="gallery__img" alt="Image 25">
-                            </figure>
-                            <figure class="gallery__item gallery__item--26">
-                                <img src="assets/img/foofa/26.jpg" class="gallery__img" alt="Image 26">
-                            </figure>
-                            <figure class="gallery__item gallery__item--27">
-                                <img src="assets/img/foofa/27.jpg" class="gallery__img" alt="Image 27">
-                            </figure>
-                            <figure class="gallery__item gallery__item--28">
-                                <img src="assets/img/foofa/28.jpg" class="gallery__img" alt="Image 28">
-                            </figure>
-                            <figure class="gallery__item gallery__item--29">
-                                <img src="assets/img/foofa/29.jpg" class="gallery__img" alt="Image 29">
-                            </figure>
-                            <figure class="gallery__item gallery__item--30">
-                                <img src="assets/img/foofa/30.jpg" class="gallery__img" alt="Image 30">
-                            </figure>
+                            </div>
                         </div>
-
 
                     </div>
                 </div>
