@@ -58,5 +58,6 @@ function copy(id)
     document.body.append(textarea);
     textarea.select();
     document.execCommand('copy');
+    alert("계좌가 복사 되었습니다");
     textarea.remove();
 }
