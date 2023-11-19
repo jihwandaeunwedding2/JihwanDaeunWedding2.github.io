@@ -10902,7 +10902,7 @@ header > .text-foofa2{
 }
 
 header > .container {
-  padding-top: 3em;
+/*  padding-top: 3em; */
 }
 
 #leaf{
@@ -11023,7 +11023,7 @@ header > .container {
   width:100%;
   height:100%;
   display: grid;
-  grid-gap: 16px;
+  grid-gap: 10px;
   padding: 16px;
 
   /*  grid-template-rows: repeat(3,1fr);
@@ -11044,6 +11044,9 @@ header > .container {
 
 }
 
+.gallery__item{
+  margin-bottom: 0;
+}
 
 .gallery__item--1  { grid-area: p1; }
 .gallery__item--2 { grid-area: p2; }

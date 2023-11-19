@@ -61,3 +61,13 @@ function copy(id)
     alert("계좌가 복사 되었습니다");
     textarea.remove();
 }
+
+
+var x = document.getElementById("myAudio");
+function playAudio() {
+    x.play();
+    document.getElementById("btn-play").setAttribute("visibility", hidden);
+}
+function pauseAudio() {
+    x.pause();
+}
