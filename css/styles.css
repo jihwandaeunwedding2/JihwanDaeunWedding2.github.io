@@ -10932,6 +10932,13 @@ header > .text-foofa2{
   justify-content: space-between;
 }
 
+#word-break{
+  border-right:1px solid black;
+  position: absolute;
+  top: 20%;
+  bottom: 10%;
+}
+
 header > .container {
 /*  padding-top: 3em; */
 }
