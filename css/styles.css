@@ -10883,6 +10883,10 @@ img{
   width:100%;
 }
 
+#btn-pause{
+  visibility: hidden;
+}
+
 /*WEDDING INVITATION*/
 header > div > span {
   font-size: 0.4rem;
