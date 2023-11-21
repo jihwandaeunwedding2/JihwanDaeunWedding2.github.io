@@ -62,6 +62,15 @@ function copy(id)
 
 function audio_play(id){
     var audio=document.getElementById("myAudio");
-    audio.pause();
-    audio.classList.replace("play","pause")
+    if(id==='btn-play'){
+        audio.pause();
+        document.getElementById("btn-play").setAttribute("style","visibility:hidden")
+        document.getElementById("btn-pause").setAttribute("style","visibility:visible")
+    }
+    else{
+        audio.play();
+        document.getElementById("btn-play").setAttribute("style","visibility:visible")
+        document.getElementById("btn-pause").setAttribute("style","visibility:hidden")
+    }
+
 }

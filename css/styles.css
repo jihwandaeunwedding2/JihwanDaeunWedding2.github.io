@@ -10883,7 +10883,20 @@ img{
   width:100%;
 }
 
+#btn-play{
+  width:2em;
+  position: fixed;
+  top:1em;
+  right:1em;
+  z-index: 10;
+}
+
 #btn-pause{
+  width:2em;
+  position: fixed;
+  top:1em;
+  right:1em;
+  z-index: 10;
   visibility: hidden;
 }
 
