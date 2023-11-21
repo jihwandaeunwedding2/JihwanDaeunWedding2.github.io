@@ -10893,7 +10893,7 @@ img{
 #btn-play{
   width:2em;
   position: fixed;
-  top:1em;
+  top:1.8em;
   right:1em;
   z-index: 10;
 }
@@ -10901,7 +10901,7 @@ img{
 #btn-pause{
   width:2em;
   position: fixed;
-  top:1em;
+  top:1.8em;
   right:1em;
   z-index: 10;
   visibility: hidden;
@@ -10943,11 +10943,9 @@ header > .container {
 /*  padding-top: 3em; */
 }
 
-#leaf{
-  height: 1rem;
-  width: 1rem;
-  background-color: #f9f9f9;
-  align-content: center;
+#moon{
+  width: 20px;
+  margin-bottom: 2em;
 }
 
 #our-story{
@@ -10984,6 +10982,12 @@ header > .container {
   font-size: 0.8rem;
   color:#555;
   letter-spacing: 0.3em;
+}
+
+.text-foofa5{
+  font-family: Noto,"Noto Serif KR",serif;
+  font-size: 1rem;
+  color:#555;
 }
 
 .text-strong {
