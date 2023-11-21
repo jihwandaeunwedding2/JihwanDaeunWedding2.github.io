@@ -10876,7 +10876,14 @@ section {
 @font-face{
   font-family: 'Noto';
   src: local('Noto Serif KR'),
-  url(../assets/font/NotoSerifCJKkr-Regular.woff) format("woff");
+      url(../assets/font/NotoSerifCJKkr-Regular.woff) format("woff");
+}
+
+@font-face{
+  font-family: 'Brooke';
+  src: local('Brooke Smith Script'),
+      url(../assets/font/Brooke-Smith-Script.woff2) format("woff2"),
+      url(../assets/font/Brooke-Smith-Script.woff) format("woff");
 }
 
 img{
@@ -10916,6 +10923,13 @@ header > .text-foofa2{
   color: #555555;
   font-size: 0.8rem;
   letter-spacing: 0.2rem;
+}
+
+.groombride{
+  padding: 0.5em;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 header > .container {
@@ -10958,6 +10972,13 @@ header > .container {
   color:#555;
 }
 
+.text-foofa4{
+  font-family: Noto,"Noto Serif KR",serif;
+  font-size: 0.8rem;
+  color:#555;
+  letter-spacing: 0.3em;
+}
+
 .text-strong {
   font-weight: 600;
   text-align: center;
@@ -10976,6 +10997,11 @@ header > .container {
   font-size:0.8rem;
 }
 
+.text-brooke{
+  font-family: Brooke, 'Brooke Smith Script', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+}
 
 .bg_white {
   background-color: #fff;
@@ -11189,8 +11215,8 @@ header > .container {
 
 .animate{
   position: relative;
-  -webkit-animation: fadein 1s cubic-bezier(0.42, 0.0, 0.58, 1.0);
-  animation: fadein 1s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+  -webkit-animation: fadein 1.5s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+  animation: fadein 1.5s cubic-bezier(0.42, 0.0, 0.58, 1.0);
   /*  animation-duration: 4s; */
 }
 

@@ -45,7 +45,9 @@ const observer = new IntersectionObserver(entries => {
     });
 });
 
-observer.observe(document.querySelector('.square'));
+const scroll_target=document.querySelectorAll('.scroll-target');
+scroll_target.forEach((element) => observer.observe(element));
+
 
 function copy(id)
 {

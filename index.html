@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" user-scalable=no />
     <meta name="description" content="" />
     <meta name="author" content="" />
     <meta content="임지환 이다은 결혼합니다" property="og:title"/>
@@ -72,13 +72,13 @@
 <!--img id="btn-pause" src="assets/img/volume-up.svg" width="15" onclick="audio_play(this.id)">
 <img id="btn-play" src="assets/img/volume-mute.svg" width="15" onclick="audio_play(this.id)"-->
 
-<svg id="btn-pause" onclick="audio_play(this.id)" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="#343a40" class="bi bi-volume-up" viewBox="0 0 16 16">
+<svg id="btn-play" onclick="audio_play(this.id)" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="#343a40" class="bi bi-volume-up" viewBox="0 0 16 16">
     <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
     <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
     <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
 </svg>
 
-<svg id="btn-play" onclick="audio_play(this.id)" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="#343a40" class="bi bi-volume-mute" viewBox="0 0 16 16">
+<svg id="btn-pause" onclick="audio_play(this.id)" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="#343a40" class="bi bi-volume-mute" viewBox="0 0 16 16">
     <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
 </svg>
 
@@ -86,24 +86,44 @@
 <header class="bg-primary bg-gradient bg-white">
 
     <div class="text-center" style="white-space: break-spaces;"><span style="font-family: 'CormorantInfant-Medium', sans-serif;">W</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">E</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">D</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">D</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">N</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">G</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;"> </span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">N</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">V</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">T</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">A</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">T</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">I</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">O</span><span style="font-family: 'CormorantInfant-Medium', sans-serif;">N</span></div>
-    <div class="text-foofa2 text-center fw-bolder">임지환 | 이다은</div>
+    <!--div class="text-foofa2 text-center">임지환 | 이다은</div-->
+
+    <div class="container px-0 text-center">
+        <!--div class="row gx-4 justify-content-between"-->
+            <div class="col-lg-8 groombride justify-content-between">
+                <div style="width:50%; border-right:1px solid black;">
+                    <span class="text-brooke">Groom</span>
+                    <br>
+                    <span class="text-foofa4">임지환</span>
+                </div>
+                <div style="width:50%;">
+                    <span class="text-brooke">Bride></span>
+                    <br>
+                    <span class="text-foofa4">이다은</span>
+                </div>
+
+            </div>
+        <!--/div-->
+    </div>
+
+
 
     <div class="container px-0 text-center">
         <div class="row gx-4 justify-content-center">
-            <div class="col-lg-8 animate" style="padding-left: 0;padding-right: 0">
+            <div class="col-lg-8 scroll-target" style="padding:0">
                 <img src="assets/img/foofa/main.jpg" alt="main">
             </div>
         </div>
-        <h1 class="fw-bolder text-trajan" style="padding-top:5em; font-size: 0.7em;">jihwan and daeun</h1>
-        <h1 class="text-foofa3">2023년 12월 23일 토요일 오후 1시</h1>
-        <h1 class="text-foofa3">더채플앳논현 6층 라포레홀</h1>
+        <h1 class="fw-bolder text-trajan scroll-target" style="padding-top:5em; font-size: 0.7em;">jihwan and daeun</h1>
+        <h1 class="text-foofa3 scroll-target">2023년 12월 23일 토요일 오후 1시</h1>
+        <h1 class="text-foofa3 scroll-target">더채플앳논현 6층 라포레홀</h1>
     </div>
 </header>
 <!-- About section-->
 <section id="about">
     <div class="container px-0">
         <div class="row gx-4 justify-content-center">
-            <div class="col-lg-8 animate" style="padding:0;">
+            <div class="col-lg-8 scroll-target">
                 <img src="assets/img/green-top2.png" alt="green-top">
                 <div id="our-story" class="text-white">
                     <h1 class="fw-bolder text-foofa text-trajan">Our Story</h1>
@@ -133,7 +153,7 @@
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="modal-content animate">
+                            <div class="modal-content scroll-target">
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
                                 </div>
@@ -229,13 +249,13 @@
 <section>
     <div class="container px-4">
         <div class="row gx-4 justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-8 scroll-target">
                 <h1 class="fw-bolder text-trajan text-center" style="font-size:1.5em;">12</h1>
 
                 <div id="calendar">
-                    <div class="container animate">
+                    <div class="container">
                         <!--div class="row"-->
-                        <div class="col-foofa text-center animate-box">
+                        <div class="col-foofa text-trajan text-center animate-box">
                             <div class="wed-events" style="padding-bottom: 18px;">
                                 <div class='calendar'>
                                     <div>
@@ -264,7 +284,7 @@
 <!-- Services section-->
 <section id="services">
     <div class="container px-4">
-        <div class="row gx-4 justify-content-center">
+        <div class="row gx-4 justify-content-center scroll-target">
             <h1 class="fw-bolder text-trajan text-center text-white">Gallery</h1>
             <div class="col-lg-8 overflow-auto" style="height:30em">
                 <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
@@ -554,13 +574,13 @@
             <div class="col-lg-8 text-center">
                 <h1 class="fw-bolder text-trajan text-center" style="padding-top: 4em;">오시는 길</h1>
                 <br>
-                <p class="text-foofa2 text-center">
+                <p class="text-foofa2 text-center scroll-target">
                     서울 강남구 논현로 549 <br><br>
                     (서울 강남구 역삼동 607-21) <br><br>
                     더채플앳논현 <br><br>
                     02-562-1121 <br><br>
                 </p>
-                <div id="daumRoughmapContainer1698098444231" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
+                <div id="daumRoughmapContainer1698098444231" class="root_daum_roughmap root_daum_roughmap_landing scroll-target" style="width:100%;"></div>
                 <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
                 <script charset="UTF-8">
                     new daum.roughmap.Lander({
@@ -571,7 +591,7 @@
                     }).render();
                 </script>
                 <div id="transport">
-                    <p class="transport text-lg-start">
+                    <p class="transport text-lg-start scroll-target">
                         <img src="assets/img/shuttle.png">
                         <strong>춘천 ↔ 웨딩홀 셔틀 버스</strong>
                         <br>
@@ -585,7 +605,7 @@
                         <br>
                         오전 9시 춘천 KBS 옆 만남의 광장
                     </p>
-                    <p class="transport text-lg-start">
+                    <p class="transport text-lg-start scroll-target">
                         <img src="assets/img/bus.png">
                         <strong>버스</strong>
                         <br>
@@ -593,7 +613,7 @@
                         <br>
                         차병원(역삼방면) 하차 후 역삼역 방면 50m
                     </p>
-                    <p class="transport text-lg-start">
+                    <p class="transport text-lg-start scroll-target">
                         <img src="assets/img/subway.png">
                         <strong>지하철</strong>
                         <br>
@@ -611,7 +631,7 @@
 <section>
     <div class="container px-4">
         <div class="row gx-4 justify-content-center">
-            <div class="col-lg-8">
+            <div class="col-lg-8 scroll-target">
                 <img src="assets/img/gray-top.jpg" alt="gray-top">
                 <div id="account">
                     <h1 class="fw-bolder text-trajan text-center">Account</h1>
